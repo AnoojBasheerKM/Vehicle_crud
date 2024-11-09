@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+
+{%block main_block%}
+
+<h1>Add Your Vehicle</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+
+        </div>
+       <div class="col-4 bg-light border rounded p-2 p-3">
+        <form action="" method="post" enctype="multipart/form-data">
+            {%csrf_token%}
+    
+            {{form.as_p}}
+    
+            <button type="submit">Submit</button>
+    
+    
+        </form>
+
+       </div>
+        <div class="col-4">
+    
+        </div>
+
+    </div>
+</div>
+
+
+{%endblock%}
